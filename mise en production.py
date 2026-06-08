@@ -72,7 +72,7 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; }
 """, unsafe_allow_html=True)
 
 # ─── Chargement données ───
-DATA_DIR = "../data"
+DATA_DIR = "Data"
 
 @st.cache_data(show_spinner="Chargement des données…")
 def load_and_clean():

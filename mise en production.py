@@ -183,7 +183,7 @@ TOPS = ["TOP.D.R","TOP.VR","TOP.Rappat.valide","TOP.Poursuite","TOP.Recup","TOP.
 # ═══════════════════════════════════════════
 import os
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Data")
+DATA_DIR = "Data"
 
 try:
     df_dossiers = pd.read_csv(os.path.join(DATA_DIR, "dossier.csv"), sep=";", encoding="utf-8")

@@ -1,6 +1,4 @@
 
-
-cat > /mnt/user-data/outputs/mise_en_production.py << 'PYEOF'
 """
 app.py – Interface Streamlit
 Projet Data – DU Python 2025-2026

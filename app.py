@@ -175,7 +175,7 @@ def build_ml_base(_dd, _dt, _dr):
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## 🚗 Projet Data")
-    st.markdown("**DU Python 2025-2026**  \nUniversité de Montpellier")
+    st.markdown("**DU Big Data 2025-2026**  \nUniversité de Montpellier")
     st.markdown("---")
     page = st.radio("Navigation", [
         "🏠 Présentation",

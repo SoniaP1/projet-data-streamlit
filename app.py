@@ -1,6 +1,6 @@
 """
 app.py – Interface Streamlit
-Projet Data – DU Python 2025-2026
+Projet Data – DU BigData 2025-2026
 Université de Montpellier
 Groupe : Kadidiatou Mohamed-Hamil-Maiga, Sonia Djounfoune, Farah El-Azhari-Tahmane, Doâa Bouasse
 

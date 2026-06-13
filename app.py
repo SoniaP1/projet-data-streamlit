@@ -31,7 +31,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import os
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Data")
+DATA_DIR = "Data"
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import (classification_report, roc_auc_score, roc_curve,
@@ -90,9 +90,9 @@ def load_and_clean():
         df.columns.values[0] = "Numero_dossier_ID"
         return df
 
-    df_d = load_dossiers(f"{DATA_DIR}/dossier.csv")
-    df_t = pd.read_csv(f"{DATA_DIR}/temps.csv",     sep=";", encoding="latin1")
-    df_r = pd.read_csv(f"{DATA_DIR}/ressources.csv", sep=";", encoding="latin1")
+    df_d = load_dossiers(f"{DATA_DIR}/dossier_clean.csv")
+    df_t = pd.read_csv(f"{DATA_DIR}/temps_clean.csv",     sep=";", encoding="latin1")
+    df_r = pd.read_csv(f"{DATA_DIR}/ressources_clean.csv", sep=";", encoding="latin1")
     df_r.columns.values[0] = "Matricule"
     df_t.columns.values[0] = "Numero.dossier"
 
@@ -188,7 +188,7 @@ if page == "Presentation":
 
     if not DATA_OK:
         st.error(f" Impossible de charger les données depuis `{DATA_DIR}/`.\n\nErreur : {DATA_ERROR}")
-        st.info("Vérifiez que `dossier.csv`, `temps.csv` et `ressources.csv` se trouvent dans le dossier `data/` à la racine du projet.")
+        st.info("Vérifiez que `dossier_clean.csv`, `temps_clean.csv` et `ressources_clean.csv` se trouvent dans le dossier `data/` à la racine du projet.")
         st.stop()
 
     st.markdown('<div class="section-hdr"> Chiffres clés après nettoyage</div>', unsafe_allow_html=True)

@@ -195,7 +195,7 @@ TOPS = ["TOP.D.R", "TOP.VR", "TOP.Rappat.valide", "TOP.Poursuite", "TOP.Recup", 
 # ═══════════════════════════════════════════════════════════════════════════════
 if page == "🏠 Présentation":
     st.markdown('<div class="main-title">Projet Data – Assurance Assistance</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-title">DU Python 2025-2026 · Université de Montpellier</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-title">DU Big Data 2025-2026 · Université de Montpellier</div>', unsafe_allow_html=True)
     st.markdown("""
     Cette application présente l'analyse complète des données d'assurance assistance (2021-2022).
     Naviguez via le menu latéral pour explorer les différentes sections.

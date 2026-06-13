@@ -174,19 +174,19 @@ def build_ml_base(_dd, _dt, _dr):
 
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🚗 Projet Data")
+    st.markdown("## Projet Data")
     st.markdown("**DU Big Data 2025-2026**  \nUniversité de Montpellier")
     st.markdown("---")
     page = st.radio("Navigation", [
-        "🏠 Présentation",
-        "📊 DataViz",
-        "📐 Économétrie",
-        "🤖 Machine Learning",
-        "🔮 Simulateur"
+        " Présentation",
+        " DataViz",
+        " Économétrie",
+        " Machine Learning",
+        " Simulateur"
     ], label_visibility="collapsed")
     st.markdown("---")
     st.markdown("**Groupe :**")
-    st.markdown("- Kadidiatou M-H-M\n- Sonia Djounfoune\n- Farah El-A-T\n- Doâa Bouasse")
+    st.markdown("- Kadidiatou\n- Sonia\n- Farah\n- Doâa Bouasse")
 
 TOPS = ["TOP.D.R", "TOP.VR", "TOP.Rappat.valide", "TOP.Poursuite", "TOP.Recup", "TOP.Autres.Garanties"]
 
